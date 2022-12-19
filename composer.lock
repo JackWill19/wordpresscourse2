@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9b7bc636bda5c9fdb88703ef7114568a",
+    "content-hash": "031041af73ee6b8503fd45af7808e679",
     "packages": [
         {
             "name": "composer/installers",
@@ -340,6 +340,108 @@
             "time": "2022-07-30T15:56:11+00:00"
         },
         {
+            "name": "monolog/monolog",
+            "version": "2.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "720488632c590286b88b80e62aa3d3d551ad4a50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/720488632c590286b88b80e62aa3d3d551ad4a50",
+                "reference": "720488632c590286b88b80e62aa3d3d551ad4a50",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "psr/log": "^1.0.1 || ^2.0 || ^3.0"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0.0 || 2.0.0 || 3.0.0"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": "^2.4.9 || ^3.0",
+                "doctrine/couchdb": "~1.0@dev",
+                "elasticsearch/elasticsearch": "^7 || ^8",
+                "ext-json": "*",
+                "graylog2/gelf-php": "^1.4.2",
+                "guzzlehttp/guzzle": "^7.4",
+                "guzzlehttp/psr7": "^2.2",
+                "mongodb/mongodb": "^1.8",
+                "php-amqplib/php-amqplib": "~2.4 || ^3",
+                "phpspec/prophecy": "^1.15",
+                "phpstan/phpstan": "^0.12.91",
+                "phpunit/phpunit": "^8.5.14",
+                "predis/predis": "^1.1 || ^2.0",
+                "rollbar/rollbar": "^1.3 || ^2 || ^3",
+                "ruflin/elastica": "^7",
+                "swiftmailer/swiftmailer": "^5.3|^6.0",
+                "symfony/mailer": "^5.4 || ^6",
+                "symfony/mime": "^5.4 || ^6"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Allow sending log messages to AWS services like DynamoDB",
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "elasticsearch/elasticsearch": "Allow sending log messages to an Elasticsearch server via official client",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-curl": "Required to send log messages using the IFTTTHandler, the LogglyHandler, the SendGridHandler, the SlackWebhookHandler or the TelegramBotHandler",
+                "ext-mbstring": "Allow to work properly with unicode symbols",
+                "ext-mongodb": "Allow sending log messages to a MongoDB server (via driver)",
+                "ext-openssl": "Required to send log messages using SSL",
+                "ext-sockets": "Allow sending log messages to a Syslog server (via UDP driver)",
+                "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server (via library)",
+                "php-amqplib/php-amqplib": "Allow sending log messages to an AMQP server using php-amqplib",
+                "rollbar/rollbar": "Allow sending log messages to Rollbar",
+                "ruflin/elastica": "Allow sending log messages to an Elastic Search server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Monolog\\": "src/Monolog"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "https://seld.be"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "https://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "support": {
+                "issues": "https://github.com/Seldaek/monolog/issues",
+                "source": "https://github.com/Seldaek/monolog/tree/2.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Seldaek",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/monolog/monolog",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-07-24T11:55:47+00:00"
+        },
+        {
             "name": "phpoption/phpoption",
             "version": "1.9.0",
             "source": {
@@ -413,6 +515,56 @@
                 }
             ],
             "time": "2022-07-30T15:51:26+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "reference": "fe5ea303b0887d5caefd3d431c3e61ad47037001",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/3.0.0"
+            },
+            "time": "2021-07-14T16:46:02+00:00"
         },
         {
             "name": "roots/wordpress",
@@ -979,6 +1131,227 @@
                 }
             ],
             "time": "2022-10-16T01:01:54+00:00"
+        },
+        {
+            "name": "wp-media/wp-rocket",
+            "version": "v3.12.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-media/wp-rocket.git",
+                "reference": "36f4b69222ac01aba6e267b1d950f5fb639f53d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wp-media/wp-rocket/zipball/36f4b69222ac01aba6e267b1d950f5fb639f53d7",
+                "reference": "36f4b69222ac01aba6e267b1d950f5fb639f53d7",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0",
+                "monolog/monolog": "^1.0 || ^2.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "brain/monkey": "^2.0",
+                "coenjacobs/mozart": "^0.7",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "league/container": "^3.3",
+                "mikey179/vfsstream": "1.6.9",
+                "mnsami/composer-custom-directory-installer": "^2.0",
+                "mobiledetect/mobiledetectlib": "^2.8",
+                "php": "^7 || ^8",
+                "phpcompatibility/phpcompatibility-wp": "^2.0",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^7.5 || ^8 || ^9",
+                "psr/container": "1.0.0",
+                "roave/security-advisories": "dev-master",
+                "szepeviktor/phpstan-wordpress": "^0.7.0",
+                "woocommerce/action-scheduler": "^3.4",
+                "wp-coding-standards/wpcs": "^2",
+                "wp-media/background-processing": "^1.3",
+                "wp-media/phpunit": "^3.0.1",
+                "wp-media/rocket-lazyload-common": "^3.0",
+                "wp-media/wp-imagify-partner": "^1.0",
+                "wpackagist-plugin/amp": "^1.1.4",
+                "wpackagist-plugin/hummingbird-performance": "2.0.1",
+                "wpackagist-plugin/jetpack": "9.3.2",
+                "wpackagist-plugin/pdf-embedder": "^4.6",
+                "wpackagist-plugin/simple-custom-css": "^4.0.3",
+                "wpackagist-plugin/spinupwp": "^1.1",
+                "wpackagist-plugin/woocommerce": "^5.3",
+                "wpackagist-plugin/wp-smushit": "^3.0"
+            },
+            "type": "wordpress-plugin",
+            "extra": {
+                "installer-paths": {
+                    "./inc/Dependencies/ActionScheduler/": [
+                        "woocommerce/action-scheduler"
+                    ],
+                    "vendor/{$vendor}/{$name}/": [
+                        "type:wordpress-plugin"
+                    ]
+                },
+                "mozart": {
+                    "dep_namespace": "WP_Rocket\\Dependencies\\",
+                    "dep_directory": "/inc/Dependencies/",
+                    "classmap_directory": "/inc/classes/dependencies/",
+                    "classmap_prefix": "WP_Rocket_",
+                    "packages": [
+                        "mobiledetect/mobiledetectlib",
+                        "wp-media/background-processing",
+                        "wp-media/rocket-lazyload-common",
+                        "wp-media/wp-imagify-partner",
+                        "league/container"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WP_Rocket\\": "inc/",
+                    "WPMedia\\Cloudflare\\": "inc/Addon/Cloudflare/"
+                },
+                "classmap": [
+                    "inc/classes",
+                    "inc/vendors/classes",
+                    "inc/deprecated"
+                ],
+                "exclude-from-classmap": [
+                    "inc/vendors/classes/class-rocket-mobile-detect.php",
+                    "inc/classes/class-wp-rocket-requirements-check.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "WP Media",
+                    "email": "contact@wp-media.me",
+                    "homepage": "https://wp-media.me"
+                }
+            ],
+            "description": "Performance optimization plugin for WordPress",
+            "homepage": "https://wp-rocket.me",
+            "keywords": [
+                "cache",
+                "lazyload",
+                "minification",
+                "wordpress"
+            ],
+            "support": {
+                "issues": "https://github.com/wp-media/wp-rocket/issues",
+                "source": "https://github.com/wp-media/wp-rocket"
+            },
+            "time": "2022-12-08T15:45:33+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/duracelltomi-google-tag-manager",
+            "version": "1.16.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/duracelltomi-google-tag-manager/",
+                "reference": "tags/1.16.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/duracelltomi-google-tag-manager.1.16.2.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/duracelltomi-google-tag-manager/"
+        },
+        {
+            "name": "wpackagist-plugin/limit-login-attempts-reloaded",
+            "version": "2.25.10",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/limit-login-attempts-reloaded/",
+                "reference": "tags/2.25.10"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/limit-login-attempts-reloaded.2.25.10.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/limit-login-attempts-reloaded/"
+        },
+        {
+            "name": "wpackagist-plugin/mailgun",
+            "version": "1.8.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/mailgun/",
+                "reference": "tags/1.8.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/mailgun.1.8.9.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/mailgun/"
+        },
+        {
+            "name": "wpackagist-plugin/redirection",
+            "version": "5.3.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/redirection/",
+                "reference": "tags/5.3.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/redirection.5.3.6.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/redirection/"
+        },
+        {
+            "name": "wpackagist-plugin/webp-express",
+            "version": "0.25.5",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/webp-express/",
+                "reference": "tags/0.25.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/webp-express.0.25.5.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/webp-express/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "19.12",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/19.12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.19.12.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         },
         {
             "name": "wpackagist-theme/twentytwentytwo",
@@ -1980,6 +2353,24 @@
                 "wiki": "https://github.com/WordPress/WordPress-Coding-Standards/wiki"
             },
             "time": "2020-05-13T23:57:56+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/spatie-ray",
+            "version": "1.5.6",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/spatie-ray/",
+                "reference": "tags/1.5.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/spatie-ray.1.5.6.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/spatie-ray/"
         }
     ],
     "aliases": [],
