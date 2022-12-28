@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "031041af73ee6b8503fd45af7808e679",
+    "content-hash": "13bee5d77c795114966b422da359638c",
     "packages": [
         {
             "name": "composer/installers",
@@ -2356,15 +2356,15 @@
         },
         {
             "name": "wpackagist-plugin/spatie-ray",
-            "version": "1.5.6",
+            "version": "1.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/spatie-ray/",
-                "reference": "tags/1.5.6"
+                "reference": "tags/1.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/spatie-ray.1.5.6.zip"
+                "url": "https://downloads.wordpress.org/plugin/spatie-ray.1.6.0.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"
