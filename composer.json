@@ -48,7 +48,7 @@
     "roave/security-advisories": "dev-latest",
     "eighteen73/phpcs-composer": "^1.0",
     "eighteen73/satellite": "^1.1",
-    "wpackagist-plugin/spatie-ray": "^1.5"
+    "wpackagist-plugin/spatie-ray": "^1.7"
   },
   "config": {
     "optimize-autoloader": true,
