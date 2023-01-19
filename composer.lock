@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "031041af73ee6b8503fd45af7808e679",
+    "content-hash": "aae919e6119ef61dadeb7c434377a704",
     "packages": [
         {
             "name": "composer/installers",
@@ -1283,15 +1283,15 @@
         },
         {
             "name": "wpackagist-plugin/mailgun",
-            "version": "1.8.9",
+            "version": "1.9",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/mailgun/",
-                "reference": "tags/1.8.9"
+                "reference": "tags/1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/mailgun.1.8.9.zip"
+                "url": "https://downloads.wordpress.org/plugin/mailgun.1.9.zip"
             },
             "require": {
                 "composer/installers": "^1.0 || ^2.0"

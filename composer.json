@@ -38,7 +38,7 @@
     "wp-media/wp-rocket": "v3.12.3.3",
     "wpackagist-plugin/duracelltomi-google-tag-manager": "^1.16",
     "wpackagist-plugin/limit-login-attempts-reloaded": "^2.25",
-    "wpackagist-plugin/mailgun": "^1.8",
+    "wpackagist-plugin/mailgun": "^1.9",
     "wpackagist-plugin/redirection": "^5.3",
     "wpackagist-plugin/webp-express": "^0.25.5",
     "wpackagist-plugin/wordpress-seo": "^19.12"
