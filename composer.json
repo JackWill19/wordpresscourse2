@@ -35,7 +35,7 @@
     "roots/wordpress": "^6.1",
     "roots/wp-config": "1.0.0",
     "wpackagist-theme/twentytwentytwo": "^1.3",
-    "wp-media/wp-rocket": "v3.12.3.3",
+    "wp-media/wp-rocket": "v3.12.6.1",
     "wpackagist-plugin/duracelltomi-google-tag-manager": "^1.16",
     "wpackagist-plugin/limit-login-attempts-reloaded": "^2.25",
     "wpackagist-plugin/mailgun": "^1.8",
